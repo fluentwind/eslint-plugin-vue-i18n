@@ -19,6 +19,7 @@
     "test": "mocha tests/lib --recursive"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "requireindex": "~1.1.0"
   },
   "devDependencies": {

@@ -44,9 +44,9 @@ module.exports = {
     'no-plusplus':'off',
     'import/no-dynamic-require':'off',
     'global-require':'off',
-    'no-duplicated-values':['warn']
+    'no-duplicated-values':['warn'],
   },
   settings: {
-    i18nPath: 'test/data'
+    i18nPath: 'tests/data2'
   }
 }
