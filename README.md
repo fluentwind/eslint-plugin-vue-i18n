@@ -96,7 +96,7 @@ export default {
 };
 
 ````
-**输出**：
+输出:
 ````
 eslint-plugin-vue-i18n\tests\data2\en.js
   3:3  warning  'all': 'All' 在所有国际化语言中都相同，建议无需国际化              no-duplicated-values
