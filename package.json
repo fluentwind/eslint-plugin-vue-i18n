@@ -16,7 +16,7 @@
     "url": "git+https://github.com/fluentwind/eslint-plugin-vue-i18n.git"
   },
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests/lib --recursive"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
