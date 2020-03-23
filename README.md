@@ -36,14 +36,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "vue-i18n/no-duplicated-values": "warn"
+        "@fluentwind/vue-i18n/no-duplicated-values": "warn"
     }
 }
 ```
 
 ## Supported Rules
 
-vue-i18n/no-duplicated-values
+@fluentwind/vue-i18n/no-duplicated-values
 
 
 
