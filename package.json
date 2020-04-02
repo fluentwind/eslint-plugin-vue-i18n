@@ -1,6 +1,6 @@
 {
   "name": "@fluentwind/eslint-plugin-vue-i18n",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Lint vue i18n",
   "keywords": [
     "eslint",
