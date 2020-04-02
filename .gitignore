@@ -1,4 +1,5 @@
 /node_modules/
 /yarn.lock
-/tests/
+/tests/lang2
+/tests/lang
 /.idea/

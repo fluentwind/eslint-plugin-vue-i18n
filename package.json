@@ -17,8 +17,8 @@
   },
   "scripts": {
     "test": "mocha tests/lib --recursive",
-    "lint-no-duplicated-values": "eslint tests/lang --rulesdir lib/rules --rule {'no-duplicated-values':['warn']}",
-    "lint-no-undefined-key": "eslint tests/sourceCode --rulesdir lib/rules --rule {'no-undefined-key':['warn']}"
+    "lint-no-duplicated-values": "eslint tests/data --rulesdir lib/rules --rule {'no-duplicated-values':['warn']}",
+    "lint-no-undefined-key": "eslint tests/data --rulesdir lib/rules --rule {'no-undefined-key':['warn']}"
   },
   "dependencies": {
     "esm": "^3.2.25",
