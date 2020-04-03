@@ -47,6 +47,7 @@ Then configure the rules you want to use under the rules section.
 {
     "rules": {
         "@fluentwind/vue-i18n/no-duplicated-values": "warn"
+        "@fluentwind/vue-i18n/no-undefined-key": "warn"
     }
 }
 ```
@@ -119,8 +120,45 @@ eslint-plugin-vue-i18n\tests\data2\zh-TW.js
 ✖ 12 problems (0 errors, 12 warnings)
 ````
 
+###no-undefined-key
+检测js、vue文件中使用了国际化key但是未在国际化文件中定义
 
+支持v-bind、{{}}插值、js中的检测
 
+可对vue-i18n的$t()、i18n.$t()进行检测
+````vue
+<template>
+  <div id="app" :title="$t('title.attr')">
+    {{$t('atb.123')}}
+    {{$t(abc + 'atb1.123')}}
+    {{$t('atbtitle2.' + abc)}}
+    {{$t(`atb3.${abc}`)}}
+  </div>
+</template>
 
+<script>
+
+  export default {
+    name: 'App',
+    computed: {
+      test() {
+        return this.$t('submit2');
+      }
+    },
+  };
+</script>
+````
+
+输出:
+````
+eslint-plugin-vue-i18n\tests\vue\App.vue
+   2:28  warning  'title.attr' 在国际化文件中尚未定义                      no-undefined-key
+   3:10  warning  'atb.123' 在国际化文件中尚未定义                         no-undefined-key
+   5:10  warning  'atbtitle2.' 在国际化文件中尚未定义                      no-undefined-key
+   6:10  warning  'atb3.' 在国际化文件中尚未定义                           no-undefined-key
+  16:24  warning  'submit2' 在国际化文件中尚未定义                         no-undefined-key
+
+✖ 5 problems (0 errors, 5 warnings)
+````
 
 
