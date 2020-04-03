@@ -46,6 +46,6 @@ module.exports = {
     'global-require':'off',
   },
   settings: {
-    i18nPath: 'tests/data'
+    i18nPath: 'tests/lang'
   }
 }

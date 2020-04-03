@@ -8,4 +8,7 @@ export default {
     submit3: '操作',
   },
   submit2: '操作',
+  title: {
+    attr: '操作',
+  },
 };
