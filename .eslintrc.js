@@ -45,7 +45,4 @@ module.exports = {
     'import/no-dynamic-require':'off',
     'global-require':'off',
   },
-  settings: {
-    i18nPath: 'tests/lang'
-  }
 }

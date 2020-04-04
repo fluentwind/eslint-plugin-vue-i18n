@@ -17,8 +17,8 @@
   },
   "scripts": {
     "test": "mocha tests/lib --recursive",
-    "lint-no-duplicated-values": "eslint tests/data --rulesdir lib/rules --rule {'no-duplicated-values':['warn']}",
-    "lint-no-undefined-key": "eslint --ext .js,.vue tests/vue --rulesdir lib/rules --rule {'no-undefined-key':['warn']} --parser vue-eslint-parser parser-options {\n    ecmaVersion: 2015,\n    sourceType: 'module',\n    ecmaFeatures: {\n      jsx: true,\n      experimentalObjectRestSpread: true,\n    },\n  }"
+    "lint-no-duplicated-values": "eslint tests/data --rulesdir lib/rules --rule {\"no-duplicated-values\":[\"warn\",{\"i18nPath\":\"tests/data\"}]}",
+    "lint-no-undefined-key": "eslint --ext .js,.vue tests/vue --no-eslintrc --rulesdir lib/rules --rule {\"no-undefined-key\":[\"warn\",{\"i18nPath\":\"tests/data\"}]} --parser vue-eslint-parser parser-options {\n    ecmaVersion: 2015,\n    sourceType: 'module',\n    ecmaFeatures: {\n      jsx: true,\n      experimentalObjectRestSpread: true,\n    },\n  }"
   },
   "dependencies": {
     "babel-eslint": "^8.2.1",
